@@ -1,0 +1,26 @@
+{
+	"name": "array",
+	"version": "0.0.1",
+	"description": "Extending the array object for Node.js",
+	"keywords": [
+		"array"
+	],
+	"homepage": "https://github.com/cfsghost/node-array",
+	"author": {
+		"name": "Fred Chien(錢逢祥)",
+		"email": "cfsghost@gmail.com",
+		"web": "http://fred-zone.blogspot.com/"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:cfsghost/node-array.git"
+	},
+	"directories": {
+		"tests": "lib"
+	},
+	"engines": {
+		"node": ">= 0.4.0"
+	},
+	"main": "./lib/array.js"
+}
