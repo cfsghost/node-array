@@ -8,7 +8,7 @@ Features
 
 Asynchronize forEach() Method:
     
-    var Array = require('array');
+    var Array = require('node-array');
     
     var a = [ 1, 2, 3, 4, 5 ];
     
