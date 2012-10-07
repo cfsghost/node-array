@@ -18,6 +18,12 @@ Asynchronize forEach() Method:
             console.log('complete');
     });
 
+Installation
+-
+Using NPM utility to install module directly:
+
+    npm install node-array
+
 License
 -
 Licensed under the MIT License
