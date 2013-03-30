@@ -1,6 +1,6 @@
 {
 	"name": "node-array",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Extending the array object for Node.js",
 	"keywords": [
 		"array"
