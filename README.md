@@ -4,9 +4,15 @@ node-array
 Extending the array object for Node.js, to provide more methods and features to operate array object.
 
 Features
--
+=
 
-Asynchronize forEach() Method:
+node-array provided many easy-use methods for Array object.
+
+[Array Object].forEachAsync()
+-
+Asynchronous version of forEach() to avoid blocking by traversing array.
+
+Example:
     
     var Array = require('node-array');
     
@@ -56,18 +62,40 @@ Simulate "continue" statement of For-Loop:
             console.log('complete');
     });
 
+[Array Object].parallel()
+-
+Process all of items of array object in parallel:
 
+    var Array = require('node-array');
+
+    var a = [];
+    
+    // Prepare 1000 items for testing
+    for (var i = 0; i < 1000; i++) {
+            a.push(i+1);
+    }
+
+    // Make 50 workers to process all items of array in parallel
+    a.parallel(50, function(element, index, arr, complete) {
+    
+            setTimeout(function() {
+                    console.log(element);
+                    complete();
+            }, Math.round(Math.random() * 1000));
+    }, function() {
+            console.log('complete');
+    });
 
 Installation
--
+=
 Using NPM utility to install module directly:
 
     npm install node-array
 
 License
--
+=
 Licensed under the MIT License
 
 Authors
--
+=
 Copyright(c) 2012 Fred Chien <<cfsghost@gmail.com>>
